@@ -18,6 +18,16 @@ public class ListaBidirezionale {
             coda = nuovo;
         }
     }
+    public void addHead(int dato) {
+        Nodo nuovo = new Nodo(dato);
+        if (testa == null) {
+            testa = coda = nuovo;
+        } else {
+            nuovo.setSuccessivo(testa);
+            testa.setPrecedente(nuovo);
+            testa = nuovo;
+        }
+    }
 
     // Stampa la lista dal primo all'ultimo elemento
     public void stampaAvanti() {

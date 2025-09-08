@@ -14,5 +14,14 @@ public class Main {
         
         System.out.println("\nLista all'indietro:");
         lista.stampaIndietro();
+
+        ListaBidirezionale l2 = new ListaBidirezionale();
+        l2.addHead(30);
+        l2.addHead(20);
+        l2.addHead(10);
+
+        System.out.println("Lista2 in avanti:");
+        l2.stampaAvanti();
+        
     }
 }
